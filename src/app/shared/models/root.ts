@@ -1,0 +1,96 @@
+export interface Root {
+    meta: Meta
+    data: Daum[]
+}
+
+export interface Meta {
+    total: number
+    returned: number
+    page: number
+}
+
+export interface Daum {
+    firmID: string
+    firmName: string
+    region: string
+    address: string
+    city: string
+    stateCounty: string
+    zipCode: string
+    country: string
+    website: string
+    email: string
+    tel: string
+    fax: string
+    generalConsultant: string
+    localLanguageFirmName: string
+    secondaryLocations: string
+    firmType: string
+    yearEst: string
+    investorCurrency: string
+    matchingFunds: string
+    aumCurrMn: string
+    aumUSDMn: string
+    aumEURMn: string
+    allocationAlternativesPct: string
+    allocationAlternativesCurrMn: string
+    allocationAlternativesUSDMn: string
+    allocationAlternativesEURMn: string
+    allocationEquitiesPct: string
+    allocationEquitiesCurrMn: string
+    allocationEquitiesUSDMn: string
+    allocationEquitiesEURMn: string
+    allocationFixedIncomePct: string
+    allocationFixedIncomeCurrMn: string
+    allocationFixedIncomeUSDMn: string
+    allocationFixedIncomeEURMn: string
+    allocationCashPct: string
+    allocationCashCurrMn: string
+    allocationCashUSDMn: string
+    allocationCashEURMn: string
+    allocationOtherPct: string
+    allocationOtherCurrMn: string
+    allocationOtherUSDMn: string
+    allocationOtherEURMn: string
+    targetAllocationAlternativesPctMin: string
+    targetAllocationAlternativesPctMax: string
+    targetAllocationAlternativesCurrMnMin: string
+    targetAllocationAlternativesCurrMnMax: string
+    targetAllocationAlternativesUSDMnMin: string
+    targetAllocationAlternativesUSDMnMax: string
+    targetAllocationAlternativesEURMnMin: string
+    targetAllocationAlternativesEURMnMax: string
+    targetAllocationEquitiesPctMin: string
+    targetAllocationEquitiesPctMax: string
+    targetAllocationEquitiesCurrMnMin: string
+    targetAllocationEquitiesCurrMnMax: string
+    targetAllocationEquitiesUSDMnMin: string
+    targetAllocationEquitiesUSDMnMax: string
+    targetAllocationEquitiesEURMnMin: string
+    targetAllocationEquitiesEURMnMax: string
+    targetAllocationFixedIncomePctMin: string
+    targetAllocationFixedIncomePctMax: string
+    targetAllocationFixedIncomeCurrMnMin: string
+    targetAllocationFixedIncomeCurrMnMax: string
+    targetAllocationFixedIncomeUSDMnMin: string
+    targetAllocationFixedIncomeUSDMnMax: string
+    targetAllocationFixedIncomeEURMnMin: string
+    targetAllocationFixedIncomeEURMnMax: string
+    targetAllocationCashPctMin: string
+    targetAllocationCashPctMax: string
+    targetAllocationCashCurrMnMin: string
+    targetAllocationCashCurrMnMax: string
+    targetAllocationCashUSDMnMin: string
+    targetAllocationCashUSDMnMax: string
+    targetAllocationCashEURMnMin: string
+    targetAllocationCashEURMnMax: string
+    targetAllocationOtherPctMin: string
+    targetAllocationOtherPctMax: string
+    targetAllocationOtherCurrMnMin: string
+    targetAllocationOtherCurrMnMax: string
+    targetAllocationOtherUSDMnMin: string
+    targetAllocationOtherUSDMnMax: string
+    targetAllocationOtherEURMnMin: string
+    targetAllocationOtherEURMnMax: string
+    about: string
+}
