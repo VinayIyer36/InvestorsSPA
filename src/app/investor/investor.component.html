@@ -1,0 +1,38 @@
+<div class="form-floating mb-3">
+    <select class="form-select" (change)="showCommitment()" id="assetType" aria-label="Asset Type"
+        [(ngModel)]="assetType">
+        <option value=null style="display: none;">Please select</option>
+        <option value="PE">PE(Private
+            Equity)</option>
+        <option value="PD">PD(Private Debt)</option>
+        <option value="RE">RE(Real Estate)</option>
+        <option value="INF">INF(Infrastructure)</option>
+        <option value="NR">NR(Natural
+            Resources)</option>
+        <option value="HF">HF(Hedge Funds)</option>
+    </select>
+    <label for="assetType">Asset Type*</label>
+</div>
+
+<div *ngIf="this.investorResponse">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Fund ID</th>
+                    <th scope="col">Fund Name</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Fund Manager</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let investor of this.investorResponse?.data">
+                    <th scope="row">{{investor?.fundId}}</th>
+                    <th>{{investor?.fundName}}</th>
+                    <td>{{investor?.fundType}}</td>
+                    <td>{{investor?.fundManagerName}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
